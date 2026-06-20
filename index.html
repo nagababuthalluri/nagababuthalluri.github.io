@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Naga Babu — Process &amp; Quality Engineer</title>
-<meta name="description" content="Naga Babu (Bob) — Mechanical / Quality Engineer. PPAP, APQP, FMEA, SPC, Lean Six Sigma. MS Mechanical Engineering, University of Alabama at Birmingham." />
+<title>Naga Babu Thalluri — Process &amp; Quality Engineer</title>
+<meta name="description" content="Naga Babu Thalluri — Process & Quality Engineer. 2+ years Tier-1 automotive manufacturing. PFMEA, SPC, RCA/CAPA, Lean Six Sigma. MS Mechanical Engineering, UAB, GPA 3.77." />
+
+<!-- Link preview (LinkedIn / WhatsApp / messages). After hosting, set og:url to your live link. -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Naga Babu Thalluri — Process & Quality Engineer" />
+<meta property="og:description" content="2+ years Tier-1 automotive manufacturing. PFMEA, SPC, RCA/CAPA, Lean Six Sigma. MS Mechanical Engineering (UAB), GPA 3.77. Birmingham, AL." />
+<!-- <meta property="og:url" content="https://YOUR-LINK.netlify.app" /> -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Naga Babu Thalluri — Process & Quality Engineer" />
+<meta name="twitter:description" content="2+ years Tier-1 automotive manufacturing. PFMEA, SPC, RCA/CAPA, Lean Six Sigma. MS Mechanical Engineering (UAB), GPA 3.77." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,168 +21,135 @@
 
 <style>
   :root{
-    --paper:#EEF1F4;
-    --paper-2:#F7F9FB;
-    --ink:#13171D;
-    --ink-soft:#3C434D;
-    --line:#C2CBD3;
-    --line-strong:#94A1AC;
-    --accent:#E8552D;      /* hazard / industrial orange */
-    --accent-ink:#B23A18;
-    --blue:#1F6FEB;        /* blueprint reference */
-    --ok:#1F9D55;
-    --grid:rgba(120,135,150,.18);
+    --paper:#EEF1F4; --paper-2:#F7F9FB;
+    --ink:#13171D; --ink-soft:#3C434D;
+    --line:#C2CBD3; --line-strong:#94A1AC;
+    --accent:#E8552D; --accent-ink:#B23A18;
+    --ok:#1F9D55; --grid:rgba(120,135,150,.18);
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
   body{
-    margin:0;
-    background-color:var(--paper);
-    background-image:
-      linear-gradient(var(--grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    margin:0; background-color:var(--paper);
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
     background-size:26px 26px;
-    color:var(--ink);
-    font-family:"Inter",system-ui,sans-serif;
-    line-height:1.55;
+    color:var(--ink); font-family:"Inter",system-ui,sans-serif; line-height:1.55;
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:1060px;margin:0 auto;padding:0 22px;}
   a{color:inherit;}
 
-  /* ---------- top bar ---------- */
-  header.bar{
-    position:sticky;top:0;z-index:50;
-    background:rgba(238,241,244,.86);
-    backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line-strong);
-  }
+  header.bar{position:sticky;top:0;z-index:50;background:rgba(238,241,244,.86);backdrop-filter:blur(8px);border-bottom:1px solid var(--line-strong);}
   .bar-in{display:flex;align-items:center;justify-content:space-between;height:58px;}
-  .mark{font-family:"Space Mono",monospace;font-weight:700;font-size:13px;letter-spacing:.04em;}
+  .mark{font-family:"Space Mono",monospace;font-weight:700;font-size:12.5px;letter-spacing:.03em;}
   .mark b{color:var(--accent-ink);}
-  nav.links{display:flex;gap:22px;align-items:center;}
-  nav.links a{
-    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.05em;
-    text-decoration:none;color:var(--ink-soft);text-transform:uppercase;
-  }
+  nav.links{display:flex;gap:20px;align-items:center;}
+  nav.links a{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.05em;text-decoration:none;color:var(--ink-soft);text-transform:uppercase;}
   nav.links a:hover{color:var(--accent-ink);}
-  .btn{
-    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.04em;
-    text-transform:uppercase;text-decoration:none;
-    border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-2);
-    padding:8px 14px;display:inline-block;transition:.15s;
-  }
+  .btn{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-2);padding:8px 14px;display:inline-block;transition:.15s;}
   .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff;}
   .btn.ghost{background:transparent;color:var(--ink);}
   .btn.ghost:hover{background:var(--ink);color:var(--paper-2);}
-  @media(max-width:720px){ nav.links a:not(.btn){display:none;} }
+  @media(max-width:760px){ nav.links a:not(.btn){display:none;} }
 
-  /* ---------- hero ---------- */
-  section.hero{padding:72px 0 30px;}
-  .eyebrow{
-    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.18em;
-    text-transform:uppercase;color:var(--accent-ink);margin-bottom:18px;
-  }
-  h1.name{
-    font-family:"Archivo",sans-serif;font-weight:900;
-    font-size:clamp(44px,9vw,108px);line-height:.92;letter-spacing:-.02em;
-    margin:0;text-transform:uppercase;
-  }
-  /* dimension line under name = signature element */
-  .dim{
-    display:flex;align-items:center;gap:0;margin:14px 0 6px;
-    font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);
-    letter-spacing:.08em;
-  }
+  section.hero{padding:70px 0 28px;}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:18px;}
+  h1.name{font-family:"Archivo",sans-serif;font-weight:900;font-size:clamp(38px,8.2vw,96px);line-height:.92;letter-spacing:-.02em;margin:0;text-transform:uppercase;}
+  .dim{display:flex;align-items:center;margin:16px 0 6px;font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.08em;}
   .dim .tick{width:1px;height:14px;background:var(--line-strong);}
   .dim .rule{flex:1;height:1px;background:var(--line-strong);position:relative;}
-  .dim .val{
-    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
-    background:var(--paper);padding:0 10px;white-space:nowrap;
-  }
-  .role{
-    font-family:"Archivo",sans-serif;font-weight:700;
-    font-size:clamp(17px,3vw,24px);letter-spacing:-.01em;margin:8px 0 0;
-  }
+  .dim .val{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--paper);padding:0 10px;white-space:nowrap;}
+  .role{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(17px,3vw,24px);letter-spacing:-.01em;margin:10px 0 0;}
   .role span{color:var(--accent-ink);}
-  .lede{max-width:600px;color:var(--ink-soft);margin:18px 0 26px;font-size:16px;}
+  .lede{max-width:640px;color:var(--ink-soft);margin:18px 0 26px;font-size:16px;}
   .cta-row{display:flex;flex-wrap:wrap;gap:12px;}
 
-  /* ---------- title block (spec sheet) ---------- */
-  .titleblock{
-    margin:46px 0 8px;border:1.5px solid var(--ink);background:var(--paper-2);
-    display:grid;grid-template-columns:repeat(4,1fr);
-  }
+  .titleblock{margin:46px 0 8px;border:1.5px solid var(--ink);background:var(--paper-2);display:grid;grid-template-columns:repeat(4,1fr);}
   .tb-cell{padding:14px 16px;border-right:1px solid var(--line);}
   .tb-cell:last-child{border-right:none;}
-  .tb-cell .k{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.12em;
-    text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px;}
+  .tb-cell .k{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px;}
   .tb-cell .v{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;line-height:1.2;}
-  @media(max-width:720px){
+  @media(max-width:760px){
     .titleblock{grid-template-columns:repeat(2,1fr);}
     .tb-cell:nth-child(2){border-right:none;}
     .tb-cell:nth-child(1),.tb-cell:nth-child(2){border-bottom:1px solid var(--line);}
   }
 
-  /* ---------- generic section ---------- */
   section.block{padding:54px 0;border-top:1px solid var(--line);margin-top:36px;}
   .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:30px;}
   .sec-no{font-family:"Space Mono",monospace;font-size:12px;color:var(--accent-ink);letter-spacing:.1em;}
-  h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(24px,4vw,34px);
-    margin:0;letter-spacing:-.01em;text-transform:uppercase;}
+  h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(24px,4vw,34px);margin:0;letter-spacing:-.01em;text-transform:uppercase;}
 
-  /* ---------- experience ---------- */
-  .job{border-left:2px solid var(--line-strong);padding:0 0 30px 22px;position:relative;margin-bottom:6px;}
-  .job::before{content:"";position:absolute;left:-6px;top:4px;width:10px;height:10px;
-    background:var(--accent);border:2px solid var(--paper);border-radius:50%;}
+  .job{border-left:2px solid var(--line-strong);padding:0 0 30px 22px;position:relative;}
+  .job::before{content:"";position:absolute;left:-6px;top:4px;width:10px;height:10px;background:var(--accent);border:2px solid var(--paper);border-radius:50%;}
   .job:last-child{padding-bottom:0;}
-  .job .when{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-soft);}
-  .job h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:20px;margin:4px 0 2px;}
-  .job .co{color:var(--accent-ink);font-weight:600;font-size:15px;margin-bottom:10px;}
-  .job ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:15px;}
+  .job .when{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.05em;color:var(--ink-soft);}
+  .job h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:19px;margin:4px 0 2px;}
+  .job .co{color:var(--accent-ink);font-weight:600;font-size:14.5px;margin-bottom:10px;}
+  .job ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:14.5px;}
   .job ul li{margin-bottom:6px;}
+  .job ul li em{color:var(--accent-ink);font-style:normal;font-family:"Space Mono",monospace;font-size:12px;}
 
-  /* ---------- skills ---------- */
   .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-  @media(max-width:720px){ .skill-grid{grid-template-columns:1fr;} }
+  @media(max-width:760px){ .skill-grid{grid-template-columns:1fr;} }
   .skill-card{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;}
-  .skill-card h4{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;
-    text-transform:uppercase;margin:0 0 12px;color:var(--accent-ink);}
-  .tag{display:inline-block;font-family:"Inter";font-size:13px;font-weight:500;
-    border:1px solid var(--line-strong);padding:4px 9px;margin:0 5px 6px 0;background:var(--paper);}
+  .skill-card h4{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px;color:var(--accent-ink);}
+  .tag{display:inline-block;font-size:13px;font-weight:500;border:1px solid var(--line-strong);padding:4px 9px;margin:0 5px 6px 0;background:var(--paper);}
 
-  /* ---------- certs ---------- */
-  .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
-  @media(max-width:720px){ .cert-grid{grid-template-columns:1fr;} }
-  .cert{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;position:relative;}
-  .cert h4{font-family:"Archivo";font-weight:700;font-size:17px;margin:0 0 4px;}
-  .cert .iss{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.04em;}
-  .badge{display:inline-block;font-family:"Space Mono",monospace;font-size:10px;font-weight:700;
-    letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;margin-top:12px;}
+  .proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  @media(max-width:760px){ .proj-grid{grid-template-columns:1fr;} }
+  .proj{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;}
+  .proj .pno{font-family:"Space Mono",monospace;font-size:11px;color:var(--accent-ink);}
+  .proj h4{font-family:"Archivo";font-weight:700;font-size:16px;margin:6px 0 6px;}
+  .proj p{margin:0;color:var(--ink-soft);font-size:13.5px;}
+
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;}
+  .cert{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;}
+  .cert h4{font-family:"Archivo";font-weight:700;font-size:16px;margin:0 0 4px;}
+  .cert .iss{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.03em;}
+  .badge{display:inline-block;font-family:"Space Mono",monospace;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:4px 8px;margin-top:12px;}
   .badge.ok{background:rgba(31,157,85,.14);color:var(--ok);border:1px solid var(--ok);}
   .badge.wip{background:rgba(232,85,45,.12);color:var(--accent-ink);border:1px solid var(--accent);}
 
-  /* ---------- education ---------- */
-  .edu{border:1.5px solid var(--ink);background:var(--paper-2);padding:22px;display:flex;
-    justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center;}
-  .edu h3{font-family:"Archivo";font-weight:800;font-size:20px;margin:0;}
-  .edu .school{color:var(--accent-ink);font-weight:600;margin-top:2px;}
-  .edu .gpa{font-family:"Space Mono",monospace;font-size:13px;text-align:right;}
-  .edu .gpa b{font-size:30px;font-family:"Archivo";display:block;}
+  .edu{border:1.5px solid var(--ink);background:var(--paper-2);padding:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:14px;}
+  .edu:last-child{margin-bottom:0;}
+  .edu h3{font-family:"Archivo";font-weight:800;font-size:19px;margin:0;}
+  .edu .school{color:var(--accent-ink);font-weight:600;margin-top:2px;font-size:14.5px;}
+  .edu .meta{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);margin-top:4px;}
+  .edu .gpa{font-family:"Space Mono",monospace;font-size:12px;text-align:right;}
+  .edu .gpa b{font-size:28px;font-family:"Archivo";display:block;}
 
-  /* ---------- contact ---------- */
   section.contact{border-top:2px solid var(--ink);padding:64px 0 40px;margin-top:36px;}
   .contact h2{margin-bottom:8px;}
   .contact p{color:var(--ink-soft);max-width:520px;margin:0 0 26px;}
   .contact-row{display:flex;flex-wrap:wrap;gap:12px;}
-  footer{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);
-    letter-spacing:.05em;padding:24px 0 50px;border-top:1px solid var(--line);}
+  footer{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.05em;padding:24px 0 50px;border-top:1px solid var(--line);}
 
-  /* reveal */
+  /* scroll measurement scale under header */
+  .scrollscale{position:absolute;left:0;right:0;bottom:-2px;height:3px;background:var(--line);overflow:hidden;}
+  .scrollscale .fill{height:100%;width:0%;background:var(--accent);}
+  /* drafting-style scroll readout */
+  .readout{position:fixed;right:16px;bottom:16px;z-index:60;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--ink-soft);background:rgba(247,249,251,.85);border:1px solid var(--line-strong);padding:5px 10px;backdrop-filter:blur(4px);opacity:0;transform:translateY(6px);transition:.3s ease;pointer-events:none;}
+  .readout.show{opacity:1;transform:none;}
+  .readout b{color:var(--accent-ink);font-weight:700;}
+  /* hover micro-interactions */
+  .skill-card,.cert,.proj,.edu{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;}
+  .skill-card:hover,.cert:hover,.proj:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:6px 6px 0 rgba(232,85,45,.14);}
+  .edu:hover{border-color:var(--accent);}
+  /* hero dimension line draws out */
+  .dim .rule{transform:scaleX(0);transform-origin:center;transition:transform .9s cubic-bezier(.2,.7,.2,1) .25s;}
+  .dim.drawn .rule{transform:scaleX(1);}
+  .dim .val{opacity:0;transition:opacity .5s ease .85s;}
+  .dim.drawn .val{opacity:1;}
+
   .reveal{opacity:0;transform:translateY(16px);transition:.6s ease;}
   .reveal.in{opacity:1;transform:none;}
   @media(prefers-reduced-motion:reduce){
     .reveal{opacity:1;transform:none;transition:none;}
+    .skill-card,.cert,.proj,.edu{transition:none;}
+    .skill-card:hover,.cert:hover,.proj:hover{transform:none;}
+    .dim .rule{transform:scaleX(1);transition:none;}
+    .dim .val{opacity:1;transition:none;}
     html{scroll-behavior:auto;}
   }
 </style>
@@ -182,47 +158,46 @@
 
 <header class="bar">
   <div class="wrap bar-in">
-    <div class="mark">NAGA&nbsp;BABU<b>.</b> / QUALITY&nbsp;ENGR</div>
+    <div class="mark">NAGA BABU THALLURI<b>.</b> / QUALITY ENGR</div>
     <nav class="links">
       <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
+      <a href="#skills">Capabilities</a>
       <a href="#certs">Certifications</a>
       <a href="#contact">Contact</a>
       <a class="btn" href="#" id="resumeTop">Résumé ↓</a>
     </nav>
   </div>
+  <div class="scrollscale"><div class="fill" id="scrollFill"></div></div>
 </header>
 
 <main class="wrap">
 
-  <!-- HERO -->
   <section class="hero">
     <div class="eyebrow reveal">Process &amp; Quality Engineering · Birmingham, AL</div>
-    <h1 class="name reveal">Naga<br>Babu</h1>
+    <h1 class="name reveal">Naga&nbsp;Babu<br>Thalluri</h1>
 
     <div class="dim reveal" aria-hidden="true">
       <span class="tick"></span>
-      <span class="rule"><span class="val">MECHANICAL ENGR · MS · GPA 3.77</span></span>
+      <span class="rule"><span class="val">MS MECHANICAL ENGINEERING · UAB · GPA 3.77</span></span>
       <span class="tick"></span>
     </div>
 
-    <p class="role reveal">I build <span>quality into the process</span>, not into the inspection.</p>
+    <p class="role reveal">I build <span>quality into the process</span> — not into the inspection.</p>
     <p class="lede reveal">
-      Mechanical engineer specialized in process &amp; quality — PPAP, APQP, FMEA, SPC and
-      root-cause work that keeps production lines capable and defects out the door.
-      Automotive manufacturing background, now building a career with U.S. manufacturers.
+      Process &amp; quality engineer with 2+ years on Tier-1 automotive manufacturing lines.
+      I use PFMEA, control plans, SPC and RCA / corrective-action work to keep production
+      capable, cut scrap and downtime, and keep defects off the truck.
     </p>
     <div class="cta-row reveal">
       <a class="btn" href="#contact">Get in touch</a>
-      <a class="btn ghost" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/naga-babu-thalluri" target="_blank" rel="noopener">LinkedIn ↗</a>
       <a class="btn ghost" href="#" id="resumeHero">Download résumé</a>
     </div>
 
-    <!-- TITLE BLOCK -->
     <div class="titleblock reveal">
-      <div class="tb-cell"><div class="k">Discipline</div><div class="v">Mechanical / Quality</div></div>
-      <div class="tb-cell"><div class="k">Location</div><div class="v">Birmingham, AL</div></div>
-      <div class="tb-cell"><div class="k">Work status</div><div class="v">OPT · STEM-eligible</div></div>
+      <div class="tb-cell"><div class="k">Focus</div><div class="v">Process &amp; Quality</div></div>
+      <div class="tb-cell"><div class="k">Experience</div><div class="v">2+ Years Mfg</div></div>
+      <div class="tb-cell"><div class="k">Available</div><div class="v">Immediately</div></div>
       <div class="tb-cell"><div class="k">Open to</div><div class="v">Relocation · On-site</div></div>
     </div>
   </section>
@@ -232,86 +207,154 @@
     <div class="sec-head reveal"><span class="sec-no">01 /</span><h2>Experience</h2></div>
 
     <div class="job reveal">
-      <div class="when">[MONTH YYYY — MONTH YYYY]</div>
-      <h3>Process / Quality Engineer</h3>
-      <div class="co">Faurecia (FORVIA) · Chennai, India</div>
+      <div class="when">FEB 2026 — PRESENT</div>
+      <h3>Mechanical Design Engineer (Remote)</h3>
+      <div class="co">Techmentee · Atlanta, GA</div>
       <ul>
-        <li>Owned quality on the production line — PPAP / APQP documentation, control plans and PFMEAs for new and running parts.</li>
-        <li>Ran SPC and capability studies (Cp/Cpk) to keep critical characteristics in tolerance and flag drift early.</li>
-        <li>Led 8D / root-cause investigations on defects and customer concerns, driving CAPA to closure. <em>[add a real metric — e.g. reduced X defect by Y%]</em></li>
-        <li>Partnered with production and suppliers on poka-yoke, 5S and Kaizen improvements to cut rework and scrap.</li>
+        <li>Produce controlled 2D/3D CAD models and revision-managed drawings that improve manufacturability and reduce downstream rework.</li>
+        <li>Coordinate with engineering stakeholders to resolve design and documentation issues and release updated technical files on schedule.</li>
       </ul>
     </div>
 
     <div class="job reveal">
-      <div class="when">[MONTH YYYY — MONTH YYYY]</div>
+      <div class="when">AUG 2022 — AUG 2023</div>
       <h3>Mechanical Engineering Apprentice</h3>
       <div class="co">DRDO · India</div>
       <ul>
-        <li>Hands-on apprenticeship across design, manufacturing and testing in a defense-research environment.</li>
-        <li>Supported documentation, measurement and quality checks against engineering specifications and GD&amp;T.</li>
-        <li><em>[add 1–2 specific projects or systems you worked on]</em></li>
+        <li>Supported design, fabrication, testing and documentation for mechanical components and prototype builds in a regulated R&amp;D environment.</li>
+        <li>Assisted CAD modeling, drawing interpretation and dimensional verification against engineering specifications and GD&amp;T.</li>
+        <li>Prepared technical records, inspection notes and SOP-style documentation to improve traceability and engineering handoff.</li>
+      </ul>
+    </div>
+
+    <div class="job reveal">
+      <div class="when">OCT 2022 — APR 2023</div>
+      <h3>Mechanical Intern</h3>
+      <div class="co">South Central Railway · India</div>
+      <ul>
+        <li>Supported inspection and preventive maintenance of locomotive and coach subsystems, focused on safety, reliability and uptime.</li>
+        <li>Maintained maintenance records and escalated mechanical issues to support corrective actions and standardized workflows.</li>
+      </ul>
+    </div>
+
+    <div class="job reveal">
+      <div class="when">NOV 2019 — MAY 2022</div>
+      <h3>Process / Quality Engineer — CNC &amp; Line Operations</h3>
+      <div class="co">Faurecia · Tier-1 Automotive · Chennai, India</div>
+      <ul>
+        <li>Supported CNC machining and process-line operations on high-volume automotive components — monitoring setups, tool and machine conditions and output against engineering drawings and quality requirements.</li>
+        <li>Ran dimensional inspections with calipers, micrometers and gauges; flagged nonconformances and drove RCA (5-Why / Fishbone) and corrective actions to prevent repeat defects.</li>
+        <li>Applied PFMEA, control-plan reviews and basic SPC / Cpk to reduce variation and hold critical characteristics in tolerance.</li>
+        <li>Drove 5S, preventive-maintenance support and Lean / continuous-improvement actions that reduced line downtime, scrap and cycle time on running production.</li>
+        <li>Maintained process documentation and work instructions to the latest equipment build standards and customer revision levels.</li>
       </ul>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- CAPABILITIES -->
   <section class="block" id="skills">
     <div class="sec-head reveal"><span class="sec-no">02 /</span><h2>Capabilities</h2></div>
     <div class="skill-grid">
       <div class="skill-card reveal">
-        <h4>Quality Systems</h4>
-        <span class="tag">PPAP</span><span class="tag">APQP</span><span class="tag">PFMEA / DFMEA</span>
-        <span class="tag">Control Plans</span><span class="tag">SPC</span><span class="tag">MSA / Gage R&amp;R</span>
-        <span class="tag">8D</span><span class="tag">Root Cause</span><span class="tag">CAPA</span>
-        <span class="tag">IATF 16949</span><span class="tag">ISO 9001</span>
+        <h4>Quality Engineering</h4>
+        <span class="tag">PFMEA / FMEA</span><span class="tag">Control Plans</span><span class="tag">SPC</span>
+        <span class="tag">Cpk / Process Capability</span><span class="tag">Gage R&amp;R / MSA</span>
+        <span class="tag">RCA · 5-Why · Fishbone</span><span class="tag">8D</span><span class="tag">RCCA / CAPA</span>
+        <span class="tag">Dimensional Inspection</span><span class="tag">GD&amp;T</span>
       </div>
       <div class="skill-card reveal">
-        <h4>Methods</h4>
-        <span class="tag">Lean Manufacturing</span><span class="tag">Six Sigma (DMAIC)</span>
-        <span class="tag">Kaizen</span><span class="tag">5S</span><span class="tag">Value Stream Mapping</span>
-        <span class="tag">Poka-Yoke</span><span class="tag">Process Capability</span>
+        <h4>Process &amp; Lean</h4>
+        <span class="tag">Lean Manufacturing</span><span class="tag">Six Sigma DMAIC</span><span class="tag">5S</span>
+        <span class="tag">Value Stream Mapping</span><span class="tag">Time &amp; Motion Studies</span>
+        <span class="tag">Line Balancing</span><span class="tag">OEE</span><span class="tag">Cycle / Scrap / Downtime Reduction</span>
+        <span class="tag">Preventive Maintenance</span><span class="tag">SOPs &amp; Work Instructions</span>
       </div>
       <div class="skill-card reveal">
         <h4>Tools</h4>
         <span class="tag">Minitab</span><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span>
-        <span class="tag">GD&amp;T</span><span class="tag">Excel (advanced)</span><span class="tag">SAP / ERP</span>
-        <span class="tag">CMM / Metrology</span>
+        <span class="tag">CATIA</span><span class="tag">Fusion 360</span><span class="tag">CNC (Siemens / Fanuc)</span>
+        <span class="tag">Excel (advanced)</span><span class="tag">PowerPoint</span><span class="tag">Metrology / Gauges</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="block" id="projects">
+    <div class="sec-head reveal"><span class="sec-no">03 /</span><h2>Selected Projects</h2></div>
+    <div class="proj-grid">
+      <div class="proj reveal">
+        <div class="pno">UAB · 2025</div>
+        <h4>Peaucellier–Lipkin Linkage</h4>
+        <p>Modeled and assembled a multi-part mechanism in SolidWorks; ran motion study and simulation with tolerance and manufacturability checks for repeatable build.</p>
+      </div>
+      <div class="proj reveal">
+        <div class="pno">TEAM LEAD · 2023</div>
+        <h4>Agricultural Robot</h4>
+        <p>Led CAD design and fabrication (CATIA + Arduino), iterating on reliability and simpler assembly through functional testing and troubleshooting.</p>
+      </div>
+      <div class="proj reveal">
+        <div class="pno">B.TECH · 2021</div>
+        <h4>Power Plant Layout</h4>
+        <p>Developed a power-plant facility layout — equipment arrangement, material and utility flow, and space planning applying facility-layout and material-handling principles.</p>
+      </div>
+      <div class="proj reveal">
+        <div class="pno">2019 – 2020</div>
+        <h4>E-Bike Prototype</h4>
+        <p>Designed and built an electric-bike prototype using CAD and hands-on fabrication — welding, cutting and lathe work — with focus on assembly feasibility.</p>
       </div>
     </div>
   </section>
 
   <!-- CERTS -->
   <section class="block" id="certs">
-    <div class="sec-head reveal"><span class="sec-no">03 /</span><h2>Certifications</h2></div>
+    <div class="sec-head reveal"><span class="sec-no">04 /</span><h2>Certifications</h2></div>
     <div class="cert-grid">
-      <div class="cert reveal">
-        <h4>Lean Six Sigma — White Belt</h4>
-        <div class="iss">Issued credential</div>
-        <span class="badge ok">✓ Certified</span>
-      </div>
       <div class="cert reveal">
         <h4>Six Sigma — Green Belt</h4>
         <div class="iss">LinkedIn Learning</div>
-        <span class="badge wip">◷ In progress · Exp. Jun 2026</span>
+        <span class="badge ok">✓ Certified</span>
       </div>
       <div class="cert reveal">
         <h4>OSHA 30 — General Industry</h4>
         <div class="iss">OSHA Outreach</div>
-        <span class="badge wip">◷ In progress · Exp. Jun 2026</span>
+        <span class="badge ok">✓ Certified</span>
+      </div>
+      <div class="cert reveal">
+        <h4>Lean Six Sigma — White Belt</h4>
+        <div class="iss">Aveta</div>
+        <span class="badge ok">✓ Certified</span>
+      </div>
+      <div class="cert reveal">
+        <h4>CPR / AED</h4>
+        <div class="iss">American Red Cross</div>
+        <span class="badge ok">✓ Certified</span>
+      </div>
+      <div class="cert reveal">
+        <h4>Six Sigma — Green Belt</h4>
+        <div class="iss">ASQ · industry credential</div>
+        <span class="badge wip">◷ In progress</span>
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
   <section class="block" id="education">
-    <div class="sec-head reveal"><span class="sec-no">04 /</span><h2>Education</h2></div>
+    <div class="sec-head reveal"><span class="sec-no">05 /</span><h2>Education</h2></div>
     <div class="edu reveal">
       <div>
         <h3>M.S. Mechanical Engineering</h3>
         <div class="school">University of Alabama at Birmingham (UAB)</div>
+        <div class="meta">JAN 2024 – DEC 2025 · Automated Mfg · Quality &amp; Statistics · Processing of Materials</div>
       </div>
       <div class="gpa">GPA<b>3.77</b>/ 4.00</div>
+    </div>
+    <div class="edu reveal">
+      <div>
+        <h3>B.S. Mechanical Engineering</h3>
+        <div class="school">Marri Laxman Reddy Engineering College · Hyderabad, India</div>
+        <div class="meta">AUG 2020 – AUG 2023 · CAD/CAM · Production Planning · Lean Manufacturing</div>
+      </div>
+      <div class="gpa">CGPA<b>8.3</b>/ 10</div>
     </div>
   </section>
 
@@ -320,33 +363,30 @@
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <div class="wrap">
-    <div class="sec-head reveal"><span class="sec-no">05 /</span><h2>Let's talk</h2></div>
+    <div class="sec-head reveal"><span class="sec-no">06 /</span><h2>Let's talk</h2></div>
     <p class="reveal">Open to process, quality and manufacturing engineering roles across the U.S.
-      The fastest way to reach me is email or LinkedIn.</p>
+      Fastest way to reach me is email or LinkedIn.</p>
     <div class="contact-row reveal">
-      <a class="btn" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
-      <a class="btn ghost" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn ghost" href="tel:+1YOURNUMBER">+1 (XXX) XXX-XXXX</a>
+      <a class="btn" href="mailto:nagababuthalluri11@gmail.com">nagababuthalluri11@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/naga-babu-thalluri" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    NAGA BABU · PROCESS &amp; QUALITY ENGINEER · BIRMINGHAM, AL · © <span id="yr"></span>
+    NAGA BABU THALLURI · PROCESS &amp; QUALITY ENGINEER · BIRMINGHAM, AL · © <span id="yr"></span>
   </div>
 </footer>
 
+<div class="readout" id="readout">├&nbsp;<b><span id="rpct">00</span>%</b>&nbsp;┤</div>
+
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // résumé link target — set this to your hosted PDF URL
-  var RESUME_URL = "#"; // e.g. "resume.pdf" once you upload it
+  var RESUME_URL = "#"; // set to "resume.pdf" once you upload your résumé to the same host
   ['resumeTop','resumeHero'].forEach(function(id){
     var el=document.getElementById(id); if(el){ el.setAttribute('href',RESUME_URL); }
   });
-
-  // scroll reveal
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
   },{threshold:.12});
@@ -354,6 +394,28 @@
     el.style.transitionDelay = Math.min(i*40,240)+'ms';
     io.observe(el);
   });
+
+  // hero dimension line draws out on load
+  (function(){var d=document.querySelector('.dim');
+    if(d){ requestAnimationFrame(function(){ setTimeout(function(){ d.classList.add('drawn'); },300); }); }
+  })();
+
+  // scroll measurement scale + drafting readout
+  var fill=document.getElementById('scrollFill'),
+      readout=document.getElementById('readout'),
+      rpct=document.getElementById('rpct');
+  function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    var max=(document.documentElement.scrollHeight - window.innerHeight)||1;
+    var p=Math.min(100,Math.max(0,(y/max)*100));
+    var r=Math.round(p);
+    if(fill) fill.style.width=p+'%';
+    if(rpct) rpct.textContent = r<10 ? ('0'+r) : (''+r);
+    if(readout) readout.classList.toggle('show', y>120);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
 </script>
 </body>
 </html>
