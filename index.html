@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Naga Babu — Process &amp; Quality Engineer</title>
+<meta name="description" content="Naga Babu (Bob) — Mechanical / Quality Engineer. PPAP, APQP, FMEA, SPC, Lean Six Sigma. MS Mechanical Engineering, University of Alabama at Birmingham." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#EEF1F4;
+    --paper-2:#F7F9FB;
+    --ink:#13171D;
+    --ink-soft:#3C434D;
+    --line:#C2CBD3;
+    --line-strong:#94A1AC;
+    --accent:#E8552D;      /* hazard / industrial orange */
+    --accent-ink:#B23A18;
+    --blue:#1F6FEB;        /* blueprint reference */
+    --ok:#1F9D55;
+    --grid:rgba(120,135,150,.18);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background-color:var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:26px 26px;
+    color:var(--ink);
+    font-family:"Inter",system-ui,sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px;}
+  a{color:inherit;}
+
+  /* ---------- top bar ---------- */
+  header.bar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(238,241,244,.86);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line-strong);
+  }
+  .bar-in{display:flex;align-items:center;justify-content:space-between;height:58px;}
+  .mark{font-family:"Space Mono",monospace;font-weight:700;font-size:13px;letter-spacing:.04em;}
+  .mark b{color:var(--accent-ink);}
+  nav.links{display:flex;gap:22px;align-items:center;}
+  nav.links a{
+    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.05em;
+    text-decoration:none;color:var(--ink-soft);text-transform:uppercase;
+  }
+  nav.links a:hover{color:var(--accent-ink);}
+  .btn{
+    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.04em;
+    text-transform:uppercase;text-decoration:none;
+    border:1.5px solid var(--ink);background:var(--ink);color:var(--paper-2);
+    padding:8px 14px;display:inline-block;transition:.15s;
+  }
+  .btn:hover{background:var(--accent);border-color:var(--accent);color:#fff;}
+  .btn.ghost{background:transparent;color:var(--ink);}
+  .btn.ghost:hover{background:var(--ink);color:var(--paper-2);}
+  @media(max-width:720px){ nav.links a:not(.btn){display:none;} }
+
+  /* ---------- hero ---------- */
+  section.hero{padding:72px 0 30px;}
+  .eyebrow{
+    font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.18em;
+    text-transform:uppercase;color:var(--accent-ink);margin-bottom:18px;
+  }
+  h1.name{
+    font-family:"Archivo",sans-serif;font-weight:900;
+    font-size:clamp(44px,9vw,108px);line-height:.92;letter-spacing:-.02em;
+    margin:0;text-transform:uppercase;
+  }
+  /* dimension line under name = signature element */
+  .dim{
+    display:flex;align-items:center;gap:0;margin:14px 0 6px;
+    font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);
+    letter-spacing:.08em;
+  }
+  .dim .tick{width:1px;height:14px;background:var(--line-strong);}
+  .dim .rule{flex:1;height:1px;background:var(--line-strong);position:relative;}
+  .dim .val{
+    position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+    background:var(--paper);padding:0 10px;white-space:nowrap;
+  }
+  .role{
+    font-family:"Archivo",sans-serif;font-weight:700;
+    font-size:clamp(17px,3vw,24px);letter-spacing:-.01em;margin:8px 0 0;
+  }
+  .role span{color:var(--accent-ink);}
+  .lede{max-width:600px;color:var(--ink-soft);margin:18px 0 26px;font-size:16px;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;}
+
+  /* ---------- title block (spec sheet) ---------- */
+  .titleblock{
+    margin:46px 0 8px;border:1.5px solid var(--ink);background:var(--paper-2);
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .tb-cell{padding:14px 16px;border-right:1px solid var(--line);}
+  .tb-cell:last-child{border-right:none;}
+  .tb-cell .k{font-family:"Space Mono",monospace;font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px;}
+  .tb-cell .v{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;line-height:1.2;}
+  @media(max-width:720px){
+    .titleblock{grid-template-columns:repeat(2,1fr);}
+    .tb-cell:nth-child(2){border-right:none;}
+    .tb-cell:nth-child(1),.tb-cell:nth-child(2){border-bottom:1px solid var(--line);}
+  }
+
+  /* ---------- generic section ---------- */
+  section.block{padding:54px 0;border-top:1px solid var(--line);margin-top:36px;}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:30px;}
+  .sec-no{font-family:"Space Mono",monospace;font-size:12px;color:var(--accent-ink);letter-spacing:.1em;}
+  h2{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(24px,4vw,34px);
+    margin:0;letter-spacing:-.01em;text-transform:uppercase;}
+
+  /* ---------- experience ---------- */
+  .job{border-left:2px solid var(--line-strong);padding:0 0 30px 22px;position:relative;margin-bottom:6px;}
+  .job::before{content:"";position:absolute;left:-6px;top:4px;width:10px;height:10px;
+    background:var(--accent);border:2px solid var(--paper);border-radius:50%;}
+  .job:last-child{padding-bottom:0;}
+  .job .when{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-soft);}
+  .job h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:20px;margin:4px 0 2px;}
+  .job .co{color:var(--accent-ink);font-weight:600;font-size:15px;margin-bottom:10px;}
+  .job ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:15px;}
+  .job ul li{margin-bottom:6px;}
+
+  /* ---------- skills ---------- */
+  .skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media(max-width:720px){ .skill-grid{grid-template-columns:1fr;} }
+  .skill-card{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;}
+  .skill-card h4{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.08em;
+    text-transform:uppercase;margin:0 0 12px;color:var(--accent-ink);}
+  .tag{display:inline-block;font-family:"Inter";font-size:13px;font-weight:500;
+    border:1px solid var(--line-strong);padding:4px 9px;margin:0 5px 6px 0;background:var(--paper);}
+
+  /* ---------- certs ---------- */
+  .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:720px){ .cert-grid{grid-template-columns:1fr;} }
+  .cert{border:1.5px solid var(--ink);background:var(--paper-2);padding:18px;position:relative;}
+  .cert h4{font-family:"Archivo";font-weight:700;font-size:17px;margin:0 0 4px;}
+  .cert .iss{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);letter-spacing:.04em;}
+  .badge{display:inline-block;font-family:"Space Mono",monospace;font-size:10px;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;margin-top:12px;}
+  .badge.ok{background:rgba(31,157,85,.14);color:var(--ok);border:1px solid var(--ok);}
+  .badge.wip{background:rgba(232,85,45,.12);color:var(--accent-ink);border:1px solid var(--accent);}
+
+  /* ---------- education ---------- */
+  .edu{border:1.5px solid var(--ink);background:var(--paper-2);padding:22px;display:flex;
+    justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center;}
+  .edu h3{font-family:"Archivo";font-weight:800;font-size:20px;margin:0;}
+  .edu .school{color:var(--accent-ink);font-weight:600;margin-top:2px;}
+  .edu .gpa{font-family:"Space Mono",monospace;font-size:13px;text-align:right;}
+  .edu .gpa b{font-size:30px;font-family:"Archivo";display:block;}
+
+  /* ---------- contact ---------- */
+  section.contact{border-top:2px solid var(--ink);padding:64px 0 40px;margin-top:36px;}
+  .contact h2{margin-bottom:8px;}
+  .contact p{color:var(--ink-soft);max-width:520px;margin:0 0 26px;}
+  .contact-row{display:flex;flex-wrap:wrap;gap:12px;}
+  footer{font-family:"Space Mono",monospace;font-size:11px;color:var(--ink-soft);
+    letter-spacing:.05em;padding:24px 0 50px;border-top:1px solid var(--line);}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(16px);transition:.6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <div class="mark">NAGA&nbsp;BABU<b>.</b> / QUALITY&nbsp;ENGR</div>
+    <nav class="links">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#" id="resumeTop">Résumé ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="eyebrow reveal">Process &amp; Quality Engineering · Birmingham, AL</div>
+    <h1 class="name reveal">Naga<br>Babu</h1>
+
+    <div class="dim reveal" aria-hidden="true">
+      <span class="tick"></span>
+      <span class="rule"><span class="val">MECHANICAL ENGR · MS · GPA 3.77</span></span>
+      <span class="tick"></span>
+    </div>
+
+    <p class="role reveal">I build <span>quality into the process</span>, not into the inspection.</p>
+    <p class="lede reveal">
+      Mechanical engineer specialized in process &amp; quality — PPAP, APQP, FMEA, SPC and
+      root-cause work that keeps production lines capable and defects out the door.
+      Automotive manufacturing background, now building a career with U.S. manufacturers.
+    </p>
+    <div class="cta-row reveal">
+      <a class="btn" href="#contact">Get in touch</a>
+      <a class="btn ghost" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn ghost" href="#" id="resumeHero">Download résumé</a>
+    </div>
+
+    <!-- TITLE BLOCK -->
+    <div class="titleblock reveal">
+      <div class="tb-cell"><div class="k">Discipline</div><div class="v">Mechanical / Quality</div></div>
+      <div class="tb-cell"><div class="k">Location</div><div class="v">Birmingham, AL</div></div>
+      <div class="tb-cell"><div class="k">Work status</div><div class="v">OPT · STEM-eligible</div></div>
+      <div class="tb-cell"><div class="k">Open to</div><div class="v">Relocation · On-site</div></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block" id="experience">
+    <div class="sec-head reveal"><span class="sec-no">01 /</span><h2>Experience</h2></div>
+
+    <div class="job reveal">
+      <div class="when">[MONTH YYYY — MONTH YYYY]</div>
+      <h3>Process / Quality Engineer</h3>
+      <div class="co">Faurecia (FORVIA) · Chennai, India</div>
+      <ul>
+        <li>Owned quality on the production line — PPAP / APQP documentation, control plans and PFMEAs for new and running parts.</li>
+        <li>Ran SPC and capability studies (Cp/Cpk) to keep critical characteristics in tolerance and flag drift early.</li>
+        <li>Led 8D / root-cause investigations on defects and customer concerns, driving CAPA to closure. <em>[add a real metric — e.g. reduced X defect by Y%]</em></li>
+        <li>Partnered with production and suppliers on poka-yoke, 5S and Kaizen improvements to cut rework and scrap.</li>
+      </ul>
+    </div>
+
+    <div class="job reveal">
+      <div class="when">[MONTH YYYY — MONTH YYYY]</div>
+      <h3>Mechanical Engineering Apprentice</h3>
+      <div class="co">DRDO · India</div>
+      <ul>
+        <li>Hands-on apprenticeship across design, manufacturing and testing in a defense-research environment.</li>
+        <li>Supported documentation, measurement and quality checks against engineering specifications and GD&amp;T.</li>
+        <li><em>[add 1–2 specific projects or systems you worked on]</em></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block" id="skills">
+    <div class="sec-head reveal"><span class="sec-no">02 /</span><h2>Capabilities</h2></div>
+    <div class="skill-grid">
+      <div class="skill-card reveal">
+        <h4>Quality Systems</h4>
+        <span class="tag">PPAP</span><span class="tag">APQP</span><span class="tag">PFMEA / DFMEA</span>
+        <span class="tag">Control Plans</span><span class="tag">SPC</span><span class="tag">MSA / Gage R&amp;R</span>
+        <span class="tag">8D</span><span class="tag">Root Cause</span><span class="tag">CAPA</span>
+        <span class="tag">IATF 16949</span><span class="tag">ISO 9001</span>
+      </div>
+      <div class="skill-card reveal">
+        <h4>Methods</h4>
+        <span class="tag">Lean Manufacturing</span><span class="tag">Six Sigma (DMAIC)</span>
+        <span class="tag">Kaizen</span><span class="tag">5S</span><span class="tag">Value Stream Mapping</span>
+        <span class="tag">Poka-Yoke</span><span class="tag">Process Capability</span>
+      </div>
+      <div class="skill-card reveal">
+        <h4>Tools</h4>
+        <span class="tag">Minitab</span><span class="tag">SolidWorks</span><span class="tag">AutoCAD</span>
+        <span class="tag">GD&amp;T</span><span class="tag">Excel (advanced)</span><span class="tag">SAP / ERP</span>
+        <span class="tag">CMM / Metrology</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTS -->
+  <section class="block" id="certs">
+    <div class="sec-head reveal"><span class="sec-no">03 /</span><h2>Certifications</h2></div>
+    <div class="cert-grid">
+      <div class="cert reveal">
+        <h4>Lean Six Sigma — White Belt</h4>
+        <div class="iss">Issued credential</div>
+        <span class="badge ok">✓ Certified</span>
+      </div>
+      <div class="cert reveal">
+        <h4>Six Sigma — Green Belt</h4>
+        <div class="iss">LinkedIn Learning</div>
+        <span class="badge wip">◷ In progress · Exp. Jun 2026</span>
+      </div>
+      <div class="cert reveal">
+        <h4>OSHA 30 — General Industry</h4>
+        <div class="iss">OSHA Outreach</div>
+        <span class="badge wip">◷ In progress · Exp. Jun 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="block" id="education">
+    <div class="sec-head reveal"><span class="sec-no">04 /</span><h2>Education</h2></div>
+    <div class="edu reveal">
+      <div>
+        <h3>M.S. Mechanical Engineering</h3>
+        <div class="school">University of Alabama at Birmingham (UAB)</div>
+      </div>
+      <div class="gpa">GPA<b>3.77</b>/ 4.00</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-no">05 /</span><h2>Let's talk</h2></div>
+    <p class="reveal">Open to process, quality and manufacturing engineering roles across the U.S.
+      The fastest way to reach me is email or LinkedIn.</p>
+    <div class="contact-row reveal">
+      <a class="btn" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>
+      <a class="btn ghost" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn ghost" href="tel:+1YOURNUMBER">+1 (XXX) XXX-XXXX</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    NAGA BABU · PROCESS &amp; QUALITY ENGINEER · BIRMINGHAM, AL · © <span id="yr"></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // résumé link target — set this to your hosted PDF URL
+  var RESUME_URL = "#"; // e.g. "resume.pdf" once you upload it
+  ['resumeTop','resumeHero'].forEach(function(id){
+    var el=document.getElementById(id); if(el){ el.setAttribute('href',RESUME_URL); }
+  });
+
+  // scroll reveal
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el,i){
+    el.style.transitionDelay = Math.min(i*40,240)+'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
